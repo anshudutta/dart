@@ -5,4 +5,4 @@ DART makes it easier for users to view and analyze the contents of a Drive, dire
 
 It is written in C# and makes use of Microsoft Windows Presentation Foundation. It's architecture is based on Model View View Model pattern.
 
-![dart]https://github.com/anshudutta/dart/raw/master/SplashScreen.png
+![dart](https://github.com/anshudutta/dart/raw/master/SplashScreen.png)
