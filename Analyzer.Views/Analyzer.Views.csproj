@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DCBE8B3F-FEDD-411B-9480-503B21770A55}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Analyzer.Views</RootNamespace>
+    <AssemblyName>Analyzer.Views</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="AmCharts.Windows, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6a0af00bd7de39d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\AmCharts.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Controls.DataVisualization.Toolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\WPFToolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Block.xaml.cs">
+      <DependentUpon>Block.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CircularLoadingControl.xaml.cs">
+      <DependentUpon>CircularLoadingControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CircularLoadingControlView.xaml.cs">
+      <DependentUpon>CircularLoadingControlView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ItemLoadingView.xaml.cs">
+      <DependentUpon>ItemLoadingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingAnimation.xaml.cs">
+      <DependentUpon>LoadingAnimation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyComputerView.xaml.cs">
+      <DependentUpon>MyComputerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AnalyzerItemView.xaml.cs">
+      <DependentUpon>AnalyzerItemView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StatusBarLoadingAnimation.xaml.cs">
+      <DependentUpon>StatusBarLoadingAnimation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StatusBarLoadingAnimationView.xaml.cs">
+      <DependentUpon>StatusBarLoadingAnimationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StatusBarWorkCompleteView.xaml.cs">
+      <DependentUpon>StatusBarWorkCompleteView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WMIView.xaml.cs">
+      <DependentUpon>WMIView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AnalyzerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Block.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CircularLoadingControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CircularLoadingControlView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EntityView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="AnalyzerView.xaml.cs">
+      <DependentUpon>AnalyzerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EntityView.xaml.cs">
+      <DependentUpon>EntityView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="ItemLoadingView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoadingAnimation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoadingResourceDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MyComputerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ResourceDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AnalyzerItemView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ScrollViewerResourceDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StatusBarLoadingAnimation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StatusBarLoadingAnimationView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StatusBarWorkCompleteView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WMIView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Analyzer.Models\Analyzer.Models.csproj">
+      <Project>{581FE6E5-74E0-4F03-A8CC-CED30EC7ED72}</Project>
+      <Name>Analyzer.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Analyzer.ViewModels\Analyzer.ViewModels.csproj">
+      <Project>{9A925EAB-57C9-4FAE-A08D-5AFCC366BEFA}</Project>
+      <Name>Analyzer.ViewModels</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\File.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Pencil-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\PencilIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Word-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\file-txt-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\PDF-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\jpg-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\dll-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Documents-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Zip-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Question-mark-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Keys-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\SaveExcel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\OpenFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\SendEmail.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
